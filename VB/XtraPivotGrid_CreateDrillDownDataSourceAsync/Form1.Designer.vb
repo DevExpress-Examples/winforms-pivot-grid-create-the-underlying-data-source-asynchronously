@@ -43,8 +43,6 @@
 			Me.pivotGridControl1.Name = "pivotGridControl1"
 			Me.pivotGridControl1.Size = New System.Drawing.Size(648, 368)
 			Me.pivotGridControl1.TabIndex = 0
-'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
-'ORIGINAL LINE: this.pivotGridControl1.CellClick += new DevExpress.XtraPivotGrid.PivotCellEventHandler(this.pivotGridControl1_CellClick);
 			' 
 			' linqServerModeSource1
 			' 
@@ -113,7 +111,7 @@
 
 		#End Region
 
-		Private WithEvents pivotGridControl1 As DevExpress.XtraPivotGrid.PivotGridControl
+		Private pivotGridControl1 As DevExpress.XtraPivotGrid.PivotGridControl
 		Private fieldCity As DevExpress.XtraPivotGrid.PivotGridField
 		Private fieldCountry As DevExpress.XtraPivotGrid.PivotGridField
 		Private fldYear As DevExpress.XtraPivotGrid.PivotGridField

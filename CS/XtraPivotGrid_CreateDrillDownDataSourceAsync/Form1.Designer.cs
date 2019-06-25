@@ -48,7 +48,6 @@
             this.pivotGridControl1.Name = "pivotGridControl1";
             this.pivotGridControl1.Size = new System.Drawing.Size(648, 368);
             this.pivotGridControl1.TabIndex = 0;
-            this.pivotGridControl1.CellClick += new DevExpress.XtraPivotGrid.PivotCellEventHandler(this.pivotGridControl1_CellClick);
             // 
             // linqServerModeSource1
             // 
