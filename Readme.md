@@ -3,13 +3,16 @@
 
 * [Form1.cs](./CS/XtraPivotGrid_CreateDrillDownDataSourceAsync/Form1.cs) (VB: [Form1.vb](./VB/XtraPivotGrid_CreateDrillDownDataSourceAsync/Form1.vb))
 <!-- default file list end -->
-# How to use asynchronous operations that return the result
+# How to Create the Underlying Data Source (Drill-Down) in an Asynchronous Operation
 
+This example performs an asynchronous operation that creates a drill-down data source for the selected PivotGrid cell and gets the operation result - the underlying data source.
 
-<p>This example shows how to use asynchronous operations that return the result. <br />
-In this example, the <a href="http://documentation.devexpress.com/#WPF/DevExpressXpfPivotGridPivotGridControl_CellClicktopic"><u>PivotGridControl.CellClick</u></a> event is handled to generate a drill-down data source for a specific cell using the <a href="http://documentation.devexpress.com/#WPF/DevExpressXpfPivotGridPivotGridControl_CreateDrillDownDataSourceAsynctopic"><u>PivotGridControl.CreateDrillDownDataSourceAsync</u></a> method. The <a href="http://documentation.devexpress.com/#WPF/DevExpressXpfPivotGridAsyncCompletedHandlertopic"><u>AsyncCompletedHandler</u></a> delegate is passed as a method parameter. The referenced method is executed after the operation is completed, allowing to obtain the result via the <i>result</i> parameter of the delegate. This parameter returns an <a href="http://documentation.devexpress.com/#WPF/DevExpressXpfPivotGridAsyncOperationResultMembersTopicAll"><u>AsyncOperationResult</u></a> instance.<br />
-The <a href="http://documentation.devexpress.com/#WPF/DevExpressXpfPivotGridAsyncOperationResult_Valuetopic"><u>AsyncOperationResult.Value</u></a> property is used to obtain a record set associated with the clicked cell. Then, the <a href="http://documentation.devexpress.com/#WPF/DevExpressXpfPivotGridPivotDrillDownDataSource_RowCounttopic"><u>PivotDrillDownDataSource.RowCount</u></a> property is used to determine the number of records in the data source for this cell.</p>
+In this example, the PivotGrid control is bound to the [LinqServerModeSource](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Linq.LinqServerModeSource) data source and operates in [server mode](https://docs.devexpress.com/WindowsForms/17856).
 
-<br/>
+The [PivotGridControl.CellClick](https://docs.devexpress.com/WindowsForms/DevExpress.XtraPivotGrid.PivotGridControl.CellClick) event handler calls the [PivotGridControl.CreateDrillDownDataSourceAsync](https://docs.devexpress.com/WindowsForms/DevExpress.XtraPivotGrid.PivotGridControl.CreateDrillDownDataSourceAsync(Int32--Int32--Int32--List-String---AsyncCompletedHandler)) method to generate a drill-down data source for the selected cell. The method parameter specifies the number of records to return. The method also specifies the columns to add to the the data set.
 
+The last item in the method's parameter list is the <a href="http://documentation.devexpress.com/#WPF/DevExpressXpfPivotGridAsyncCompletedHandlertopic"><u>AsyncCompletedHandler</u></a> delegate. The delegate is executed when the operation is complete. The delegate's <i>result</i> parameter is the [AsyncOperationResult](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraPivotGrid.AsyncOperationResult) instance whose [Value](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraPivotGrid.AsyncOperationResult.Value) property contains the result of the operation. 
 
+The operation's result is casted to the [PivotDrillDownDataSource](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraPivotGrid.PivotDrillDownDataSource) and the [GridControl](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.GridControl) displays the underlying records in the auxillary DrillDown form.
+
+![screenshot](/images/screenshot.png)

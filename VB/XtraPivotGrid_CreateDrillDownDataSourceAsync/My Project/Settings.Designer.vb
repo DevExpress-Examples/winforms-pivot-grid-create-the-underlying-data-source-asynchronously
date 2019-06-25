@@ -11,23 +11,23 @@
 Namespace My
 
 
-    <Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute(), Global.System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "10.0.0.0")> _
-    Friend NotInheritable Partial Class Settings
-        Inherits System.Configuration.ApplicationSettingsBase
+	<Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute(), Global.System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.9.0.0")>
+	Friend NotInheritable Partial Class Settings
+		Inherits System.Configuration.ApplicationSettingsBase
 
-        Private Shared defaultInstance As Settings = (CType(Global.System.Configuration.ApplicationSettingsBase.Synchronized(New Settings()), Settings))
+		Private Shared defaultInstance As Settings = (CType(Global.System.Configuration.ApplicationSettingsBase.Synchronized(New Settings()), Settings))
 
-        Public Shared ReadOnly Property [Default]() As Settings
-            Get
-                Return defaultInstance
-            End Get
-        End Property
+		Public Shared ReadOnly Property [Default]() As Settings
+			Get
+				Return defaultInstance
+			End Get
+		End Property
 
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(), Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString), Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\nwind.mdb")> _
-        Public ReadOnly Property nwindConnectionString() As String
-            Get
-                Return (DirectCast(Me("nwindConnectionString"), String))
-            End Get
-        End Property
-    End Class
+		<Global.System.Configuration.ApplicationScopedSettingAttribute(), Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString), Global.System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\NW.mdf;Integr" & "ated Security=True;Connect Timeout=30")>
+		Public ReadOnly Property NWConnectionString() As String
+			Get
+				Return (DirectCast(Me("NWConnectionString"), String))
+			End Get
+		End Property
+	End Class
 End Namespace
