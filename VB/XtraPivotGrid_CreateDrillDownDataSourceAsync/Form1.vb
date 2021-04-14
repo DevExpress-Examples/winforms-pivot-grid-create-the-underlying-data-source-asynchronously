@@ -1,4 +1,4 @@
-Imports DevExpress.XtraPivotGrid
+﻿Imports DevExpress.XtraPivotGrid
 Imports System
 Imports System.Collections.Generic
 
@@ -23,8 +23,8 @@ Namespace XtraPivotGrid_CreateDrillDownDataSourceAsync
 			'Check whether an asynchronous operation is in progress.
 			If Not pivot.IsAsyncInProgress Then
 
-			' Get the record set associated with the clicked cell.
-			dForm.DataSource = Await pivot.CreateDrillDownDataSourceAsync(e.ColumnIndex, e.RowIndex, 25, New List(Of String) From {"ProductName", "Quantity"})
+				' Get the record set associated with the clicked cell.
+				dForm.DataSource = Await pivot.CreateDrillDownDataSourceAsync(e.ColumnIndex, e.RowIndex, 25, New List(Of String) From {"ProductName", "Quantity"})
 			End If
 		End Sub
 		Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
