@@ -24,9 +24,14 @@ The [PivotGridControl.CellClick](https://docs.devexpress.com/WindowsForms/DevExp
 
 The [GridControl](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.GridControl) displays the underlying records (the created [PivotDrillDownDataSource](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraPivotGrid.PivotDrillDownDataSource)) in the auxillary DrillDown form.
 
-## Documantation
+## Documentation
 
 - [Asynchronous Mode](https://docs.devexpress.com/WindowsForms/9578/controls-and-libraries/pivot-grid/binding-to-data/asynchronous-mode)
 - [Drill Down to the Underlying Data](https://docs.devexpress.com/WindowsForms/1882/controls-and-libraries/pivot-grid/data-shaping/summarization/summaries/obtaining-underlying-data-drill-down)
+
+## More Examples
+
+- [Pivot Grid for WinForms - How to Display Underlying (Drill-Down) Records](https://github.com/DevExpress-Examples/winforms-pivotgrid-how-to-display-underlying-data)
+- [Pivot Grid for WPF - How to Display Underlying Records Asynchronously](https://github.com/DevExpress-Examples/wpf-pivotgrid-how-to-display-underlying-data-asynchronously)
 
 
