@@ -4,13 +4,18 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 <!-- default file list -->
-*Files to look at*:
+# Pivot Grid for WinForms - How to Create the Underlying Data Source (Drill-Down) Asynchronously
+
+This example executes an asynchronous operation that creates a drill-down data source for the selected PivotGrid cell and gets the operation result - the underlying data source.
+
+![screenshot](/images/screenshot.png)
+
+## Files to look at
 
 * [Form1.cs](./CS/XtraPivotGrid_CreateDrillDownDataSourceAsync/Form1.cs) (VB: [Form1.vb](./VB/XtraPivotGrid_CreateDrillDownDataSourceAsync/Form1.vb))
 <!-- default file list end -->
-# How to Create the Underlying Data Source (Drill-Down) Asynchronously
 
-This example performs an asynchronous operation that creates a drill-down data source for the selected PivotGrid cell and gets the operation result - the underlying data source.
+## Example Overview
 
 In this example, the PivotGrid control is bound to the [LinqServerModeSource](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Linq.LinqServerModeSource) data source and operates in [server mode](https://docs.devexpress.com/WindowsForms/17856).
 
@@ -18,4 +23,12 @@ The [PivotGridControl.CellClick](https://docs.devexpress.com/WindowsForms/DevExp
 
 The [GridControl](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.GridControl) displays the underlying records (the created [PivotDrillDownDataSource](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraPivotGrid.PivotDrillDownDataSource)) in the auxillary DrillDown form.
 
-![screenshot](/images/screenshot.png)
+## Documentation
+
+- [Asynchronous Mode](https://docs.devexpress.com/WindowsForms/9578/controls-and-libraries/pivot-grid/binding-to-data/asynchronous-mode)
+- [Drill Down to the Underlying Data](https://docs.devexpress.com/WindowsForms/1882/controls-and-libraries/pivot-grid/data-shaping/summarization/summaries/obtaining-underlying-data-drill-down)
+
+## More Examples
+
+- [Pivot Grid for WinForms - How to Display Underlying (Drill-Down) Records](https://github.com/DevExpress-Examples/winforms-pivotgrid-how-to-display-underlying-data)
+- [Pivot Grid for WPF - How to Display Underlying Records Asynchronously](https://github.com/DevExpress-Examples/wpf-pivotgrid-how-to-display-underlying-data-asynchronously)
