@@ -5,6 +5,8 @@
 <!-- default badges end -->
 <!-- default file list -->
 
+# Pivot Grid for WinForms - How to Create the Underlying Data Source (Drill-Down) Asynchronously
+
 This example executes an asynchronous operation that creates a drill-down data source for the selected PivotGrid cell and gets the operation result - the underlying data source.
 
 ![screenshot](/images/screenshot.png)
@@ -13,7 +15,6 @@ This example executes an asynchronous operation that creates a drill-down data s
 
 * [Form1.cs](./CS/XtraPivotGrid_CreateDrillDownDataSourceAsync/Form1.cs) (VB: [Form1.vb](./VB/XtraPivotGrid_CreateDrillDownDataSourceAsync/Form1.vb))
 <!-- default file list end -->
-# Pivot Grid for WinForms - How to Create the Underlying Data Source (Drill-Down) Asynchronously
 
 ## Example Overview
 
