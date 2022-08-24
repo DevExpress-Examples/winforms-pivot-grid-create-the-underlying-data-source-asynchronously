@@ -1,5 +1,7 @@
-﻿Namespace XtraPivotGrid_CreateDrillDownDataSourceAsync
-    Partial Public Class Form1
+Namespace XtraPivotGrid_CreateDrillDownDataSourceAsync
+
+    Partial Class Form1
+
         ''' <summary>
         ''' Required designer variable.
         ''' </summary>
@@ -10,14 +12,14 @@
         ''' </summary>
         ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-            If disposing AndAlso (components IsNot Nothing) Then
-                components.Dispose()
+            If disposing AndAlso (Me.components IsNot Nothing) Then
+                Me.components.Dispose()
             End If
+
             MyBase.Dispose(disposing)
         End Sub
 
-        #Region "Windows Form Designer generated code"
-
+'#Region "Windows Form Designer generated code"
         ''' <summary>
         ''' Required method for Designer support - do not modify
         ''' the contents of this method with the code editor.
@@ -34,20 +36,21 @@
             Me.fieldSalesPerson1 = New DevExpress.XtraPivotGrid.PivotGridField()
             Me.salesPersonTableAdapter = New XtraPivotGrid_CreateDrillDownDataSourceAsync.nwindDataSetTableAdapters.SalesPersonTableAdapter()
             Me.label1 = New System.Windows.Forms.Label()
-            DirectCast(Me.pivotGridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.salesPersonBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.nwindDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.pivotGridControl1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.salesPersonBindingSource), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.nwindDataSet), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             ' 
             ' pivotGridControl1
             ' 
             Me.pivotGridControl1.DataSource = Me.salesPersonBindingSource
             Me.pivotGridControl1.Dock = System.Windows.Forms.DockStyle.Fill
-            Me.pivotGridControl1.Fields.AddRange(New DevExpress.XtraPivotGrid.PivotGridField() { Me.fieldCountry1, Me.fieldProductName1, Me.fieldCategoryName1, Me.fieldExtendedPrice1, Me.fieldSalesPerson1})
+            Me.pivotGridControl1.Fields.AddRange(New DevExpress.XtraPivotGrid.PivotGridField() {Me.fieldCountry1, Me.fieldProductName1, Me.fieldCategoryName1, Me.fieldExtendedPrice1, Me.fieldSalesPerson1})
             Me.pivotGridControl1.Location = New System.Drawing.Point(0, 0)
             Me.pivotGridControl1.Name = "pivotGridControl1"
             Me.pivotGridControl1.Size = New System.Drawing.Size(675, 329)
             Me.pivotGridControl1.TabIndex = 0
+            AddHandler Me.pivotGridControl1.CellClick, New DevExpress.XtraPivotGrid.PivotCellEventHandler(AddressOf Me.pivotGridControl1_CellClick)
             ' 
             ' salesPersonBindingSource
             ' 
@@ -106,7 +109,7 @@
             ' label1
             ' 
             Me.label1.AutoSize = True
-            Me.label1.BackColor = System.Drawing.Color.FromArgb((CInt((CByte(225)))), (CInt((CByte(226)))), (CInt((CByte(231)))))
+            Me.label1.BackColor = System.Drawing.Color.FromArgb((CInt(((CByte((225)))))), (CInt(((CByte((226)))))), (CInt(((CByte((231)))))))
             Me.label1.Location = New System.Drawing.Point(201, 9)
             Me.label1.Name = "label1"
             Me.label1.Size = New System.Drawing.Size(57, 13)
@@ -122,26 +125,33 @@
             Me.Controls.Add(Me.pivotGridControl1)
             Me.Name = "Form1"
             Me.Text = "Form1"
-            DirectCast(Me.pivotGridControl1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.salesPersonBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.nwindDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+            AddHandler Me.Load, New System.EventHandler(AddressOf Me.Form1_Load)
+            CType((Me.pivotGridControl1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.salesPersonBindingSource), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.nwindDataSet), System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
             Me.PerformLayout()
-
         End Sub
 
-        #End Region
+'#End Region
+        Private pivotGridControl1 As DevExpress.XtraPivotGrid.PivotGridControl
 
-        Private WithEvents pivotGridControl1 As DevExpress.XtraPivotGrid.PivotGridControl
-        Private nwindDataSet As nwindDataSet
+        Private nwindDataSet As XtraPivotGrid_CreateDrillDownDataSourceAsync.nwindDataSet
+
         Private salesPersonBindingSource As System.Windows.Forms.BindingSource
+
         Private salesPersonTableAdapter As XtraPivotGrid_CreateDrillDownDataSourceAsync.nwindDataSetTableAdapters.SalesPersonTableAdapter
+
         Private fieldCountry1 As DevExpress.XtraPivotGrid.PivotGridField
+
         Private fieldProductName1 As DevExpress.XtraPivotGrid.PivotGridField
+
         Private fieldCategoryName1 As DevExpress.XtraPivotGrid.PivotGridField
+
         Private fieldExtendedPrice1 As DevExpress.XtraPivotGrid.PivotGridField
+
         Private fieldSalesPerson1 As DevExpress.XtraPivotGrid.PivotGridField
+
         Private label1 As System.Windows.Forms.Label
     End Class
 End Namespace
-
