@@ -10,7 +10,7 @@ This example executes an asynchronous operation that creates a drill-down data s
 
 ![screenshot](/images/screenshot.png)
 
-## Files to look at
+## Files to Review
 
 * [Form1.cs](./CS/XtraPivotGrid_CreateDrillDownDataSourceAsync/Form1.cs) (VB: [Form1.vb](./VB/XtraPivotGrid_CreateDrillDownDataSourceAsync/Form1.vb))
 <!-- default file list end -->
