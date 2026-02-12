@@ -34,7 +34,7 @@ The [GridControl](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.G
 - [Pivot Grid for WinForms - How to Display Underlying (Drill-Down) Records](https://github.com/DevExpress-Examples/winforms-pivotgrid-how-to-display-underlying-data)
 - [Pivot Grid for WPF - How to Display Underlying Records Asynchronously](https://github.com/DevExpress-Examples/wpf-pivotgrid-how-to-display-underlying-data-asynchronously)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-pivot-grid-create-the-underlying-data-source-asynchronously&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-pivot-grid-create-the-underlying-data-source-asynchronously&~~~was_helpful=no)
 
